@@ -7,16 +7,20 @@ Este é um projeto de URL Shortlink desenvolvido com Vue.js no frontend e Larave
 Certifique-se de ter os seguintes pré-requisitos instalados em sua máquina antes de começar:
 
 [Node.js] - LTS Version
+
 [NPM] - geralmente incluído na instalação do Node.js
+
 [Composer] - LTS Version
+
 [PHP] - Versão 8.1 ou superior
+
 [MySQL] - Ou outro banco de dados compatível
 
 ## Configuração do Backend (Laravel)
 
 1) Clone o repositório:
 ```
-git clone https://github.com/silviooosilva/url-shortlink.git
+git clone https://github.com/silviooosilva/URL-Shortlink.git
 ```
 
 2) Navegue até o diretório do backend:
@@ -52,14 +56,19 @@ DB_PASSWORD=sua_senha
 ```
 php artisan key:generate
 ```
+7) Gere a JWT Authentication Secret:
 
-7) Execute as migrações do banco de dados:
+```
+php artisan jwt:secret
+```
+
+8) Execute as migrações do banco de dados:
 
 ```
 php artisan migrate
 ```
 
-8) Inicie o servidor backend:
+9) Inicie o servidor backend:
 
 ```
 php artisan serve
@@ -92,4 +101,4 @@ Acesse a aplicação pelo navegador, crie uma conta e comece a encurtar suas URL
 
 ### By - Sílvio Silva
 
-Enjoy :rocket
+Enjoy 🚀
