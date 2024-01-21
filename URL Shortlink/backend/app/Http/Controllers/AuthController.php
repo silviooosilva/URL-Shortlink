@@ -31,19 +31,4 @@ class AuthController extends Controller
     {
         return $this->auth->logout();
     }
-
-    public function resetPassword(Request $request) : JsonResponse
-    {
-        /*
-        $userExist = User::where('email', $request['email'])->get();
-        if($userExist)
-        {
-            $token = Str::random(60);
-            Mail::to($request['email'])->send(new MailPasswordService($token));
-            return response()->json(['response' => 'Email enviado', 'token' => $token]);
-        }
-        */
-        return response()->json(['response' => 'Email não cadastrado!']);
-    }
-    
 }
